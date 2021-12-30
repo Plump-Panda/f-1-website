@@ -29,6 +29,6 @@ export default {
 #app {
   font-family: 'Exo 2', sans-serif;
   background-color: #232323;
-  height: 100vh;
+  color: white;
 }
 </style>

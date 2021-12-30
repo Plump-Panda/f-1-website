@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <ul class="navbar">
-      <li>Home</li>
-      <li>Circuits</li>
-      <li>Drivers</li>
-    </ul>
-  </div>
+  <ul class="navbar">
+    <li>Home</li>
+    <li>Circuits</li>
+    <li>Drivers</li>
+  </ul>
 </template>
 
 <script>
@@ -22,7 +20,6 @@ export default {
   padding-top: .5em;
   padding-bottom: .5em;
   display: flex;
-  width: 100vw;
   background-color: #F70100;
 }
 

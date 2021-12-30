@@ -1,21 +1,24 @@
 <template>
-  <div class="container">
-    <section id="left-section">
-        <BannerFlag name="Lando Norris"/>
-    </section>
-    <section id="right-section">
-      <img alt="Car Image" class="car" :src="require(`@/assets/${carImage}`)">
-    </section>
-  </div>
+  <h1>Season: 2021</h1>
+  <section class="center" id="carousel">
+    <Carousel/>
+  </section>
+
+  <section class="center" id="driverStats">
+    <DriverStats/>
+  </section>
+
 </template>
 
 
 <script>
-import BannerFlag from "./BannerFlag";
+import Carousel from "./Carousel";
+import DriverStats from "./DriverStats";
 export default {
   name: 'DriverPage',
   components: {
-    BannerFlag
+    Carousel,
+    DriverStats
   },
   props: {
     carImage: {type: String, required: true}
@@ -27,26 +30,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.container{
+h1{
+  text-align: center;
+}
+.center{
   display: flex;
-  flex-wrap: nowrap;
-}
-
-section{
-  border-color: red;
-  border-width: 1px;
-  border-style: dashed;
-}
-
-#left-section{
-  width: 35%;
-}
-
-#right-section{
-  width: 65%;
-}
-
-.car{
-  width: 35em;
+  align-items: center;
+  justify-content: center;
 }
 </style>
